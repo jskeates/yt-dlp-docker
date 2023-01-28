@@ -1,7 +1,7 @@
 # FROM alpine:edge
-FROM alpine@sha256:0119f88f395766eb52f9b817c3d23576bf31935dc8e94abe14bae9a083ce4639
+FROM alpine@sha256:93d5a28ff72d288d69b5997b8ba47396d2cbb62a72b5d87cd3351094b5d578a0
 
-RUN apk add --no-cache bash=5.1.8-r0 youtube-dl=2021.06.06-r0 ffmpeg=4.4-r4 \
+RUN apk add --no-cache bash=5.2.15-r0 youtube-dl=2021.12.17-r0 ffmpeg=5.1.2-r3 \
  && adduser -h /home/appuser -s /bin/bash -D -u 1000 appuser
 
 USER appuser
