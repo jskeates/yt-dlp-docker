@@ -1,7 +1,7 @@
 # FROM alpine:edge
-FROM alpine@sha256:3e44438281baf26907675b99c9a4a421c4d4a57c954120327e703aa8329086bd
+FROM alpine@sha256:e31c3b1cd47718260e1b6163af0a05b3c428dc01fa410baf72ca8b8076e22e72
 
-RUN apk add --no-cache yt-dlp=2023.09.24-r0 bash=5.2.15-r6 curl=8.3.0-r1 \
+RUN apk add --no-cache yt-dlp=2024.05.27-r0 bash=5.2.26-r0 curl=8.7.1-r0 \
  && adduser -h /home/appuser -s /bin/bash -D -u 1000 appuser
 
 USER appuser
